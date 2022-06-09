@@ -1,0 +1,12 @@
+.searchbar {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar form {
+    display: inline-flex;
+    width: 60%;
+}
