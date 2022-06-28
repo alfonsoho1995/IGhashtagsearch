@@ -7,9 +7,9 @@ const MainHeader = () => {
     return (
         <React.Fragment>
             <header className={classes.header}>
-                <img src={projectImg} alt="haotech IG 分析工具"/>
-                <h1>歡迎使用 IG 分析工具</h1>
-                <p>搜尋最近相關熱門的 hashtags</p>
+                <img src={projectImg} alt="haotech IG analytics tool"/>
+                <h1>Welcome to the IG analytics tool</h1>
+                <p>Searching the related and popular hashtags recently</p>
             </header>
         </React.Fragment>
     )

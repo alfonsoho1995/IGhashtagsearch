@@ -8,7 +8,7 @@ const SearchResultHasValue = (props) => {
     useEffect(() => {
         var compare = props.value;
         var hashtagList = [];
-        var countList = ["使用次數"];
+        var countList = ["Count"];
         function sortData() {
             
             compare.sort((a, b) => {
@@ -38,7 +38,7 @@ const SearchResultHasValue = (props) => {
                     ],
                     type: "bar",
                     colors: {
-                        "使用次數": "#26453D"
+                        "Count": "#26453D"
                     },
                     labels: true,
                     onmouseover: function (d) { 

@@ -59,7 +59,7 @@ const SearchBar = (props) => {
         event.target.placeholder = placeholderInfo;
     }
 
-    const placeholderInfo = "請使用「英文」搜尋 hashtags，如：haohistory";
+    const placeholderInfo = "Please type English for hashtags, for example, Lexus";
 
     const submitHandler = (event) => {
       event.preventDefault();
@@ -84,7 +84,7 @@ const SearchBar = (props) => {
               type="submit"
               disabled={!formIsValid}
             >
-              輸入
+              Enter
             </Button>
           </div>
         </form>
