@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
 import './App.css';
-import TagManager from 'react-gtm-module';
+import ReactGA from 'react-ga4';
 
 import MainHeader from './components/Layout/MainHeader';
 import SearchFiled from './components/Layout/SearchComponents/SearchField';
 
-const tagManagerArgs = {
-  gtmId: 'GTM-NBDN9N7'
-}
 
-TagManager.initialize(tagManagerArgs);
+ReactGA.initialize('GTM-NBDN9N7');
 
 function App() {
   const [data, setData] = useState('');
