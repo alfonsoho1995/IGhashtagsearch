@@ -5,9 +5,6 @@ import ReactGA from 'react-ga4';
 import MainHeader from './components/Layout/MainHeader';
 import SearchFiled from './components/Layout/SearchComponents/SearchField';
 
-
-ReactGA.initialize('GTM-NBDN9N7');
-
 function App() {
   const [data, setData] = useState('');
 
@@ -18,6 +15,8 @@ function App() {
   };
 
   console.log(data);
+
+  // ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
 
   return (
     <React.Fragment>

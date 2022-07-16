@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('GTM-NBDN9N7');
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
