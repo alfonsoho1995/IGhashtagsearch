@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import ReactGA from 'react-ga4';
 
-ReactGA.initialize('GTM-NBDN9N7');
+ReactGA.initialize("G-6BLXB8D64P");
 
 ReactDOM.render(
   <React.StrictMode>

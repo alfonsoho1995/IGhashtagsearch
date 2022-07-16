@@ -16,7 +16,7 @@ function App() {
 
   console.log(data);
 
-  // ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
+  ReactGA.send({ hitType: "page_view", page: window.location.pathname });
 
   return (
     <React.Fragment>
