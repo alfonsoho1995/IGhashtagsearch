@@ -9,11 +9,22 @@ const SearchResult = (props) => {
     const [input, setInput] = useState('');
     const [result, setResult] = useState('');
     const [called, setCalled] = useState(false);
+
     useEffect(() => {
         console.log("search change !!!");
         
         setInput(props.inputValue);
+        
         var url = `https://asia-east1-ighashtag-project-01.cloudfunctions.net/fbDeveloperTest?search=${props.inputValue}`;
+        
+        
+        // var url = `/api/hashtags/${props.inputValue}`;
+        // var url = `/api/hashtags`;
+        // var url = `/api/hashtags/sqltest`;
+        // var url = `/sqltest`;
+
+
+        // console.log(url);
         axios.get(url)
             .then(res => {
                 console.log(res);
@@ -27,6 +38,7 @@ const SearchResult = (props) => {
             .catch(e => {
                 console.log(e);
             })
+        
     }, [props]);
 
     var resultShow;
