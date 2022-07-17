@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import ReactGA from 'react-ga4';
+// import ReactGA from 'react-ga4';
 
 import MainHeader from './components/Layout/MainHeader';
 import SearchFiled from './components/Layout/SearchComponents/SearchField';
@@ -16,7 +16,7 @@ function App() {
 
   console.log(data);
 
-  ReactGA.send({ hitType: "page_view", page: window.location.pathname });
+  // ReactGA.send({ hitType: "page_view", page: window.location.pathname });
 
   return (
     <React.Fragment>
