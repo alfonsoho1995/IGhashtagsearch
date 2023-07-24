@@ -3,7 +3,6 @@ import './App.css';
 
 import MainHeader from './components/Layout/MainHeader';
 import SearchFiled from './components/Layout/SearchComponents/SearchField';
-import InBrowser from './components/UI/InBrowser/InBrowser';
 
 function App() {
   // express.js
@@ -21,7 +20,6 @@ function App() {
   return (
     <React.Fragment>
       <MainHeader />
-      <InBrowser />
       <SearchFiled />
     </React.Fragment>
   );
