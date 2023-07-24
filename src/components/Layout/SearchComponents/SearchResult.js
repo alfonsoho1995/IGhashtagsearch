@@ -11,7 +11,7 @@ const SearchResult = (props) => {
     const [called, setCalled] = useState(false);
 
     useEffect(() => {
-        console.log("search change !!!");
+        // console.log("search change !!!");
         
         setInput(props.inputValue);
         
@@ -27,10 +27,11 @@ const SearchResult = (props) => {
         // console.log(url);
         axios.get(url)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.length !== 0) {
                     var resultObj = JSON.parse(res.data.split('result:')[1]);
-                    console.log(typeof(resultObj));
+                    // console.log(typeof(resultObj));
+                    // console.log(resultObj);
                     setResult(resultObj);
                     setCalled(true);
                 }
@@ -49,7 +50,7 @@ const SearchResult = (props) => {
         resultShow = <SearchResultEmpty />
     }
 
-    console.log(input);
+    // console.log(input);
 
     return (
             <React.Fragment>

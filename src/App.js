@@ -1,36 +1,26 @@
-import React, {useState} from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-// import ReactGA from 'react-ga4';
 
 import MainHeader from './components/Layout/MainHeader';
 import SearchFiled from './components/Layout/SearchComponents/SearchField';
 
 function App() {
-  const [data, setData] = useState('');
+  // express.js
+  useEffect(() => {
+    const fetchResource = async () => {
+      const response = await fetch("/");
+      const responseValue = await response.text();
+      // console.log(responseValue);
+    }
 
-  const getBackendData = async () => {
-    await fetch('/express_backend')
-      .then(result => result.json())
-      .then(body => setData(body))
-  };
-
-  console.log(data);
-
-  // ReactGA.send({ hitType: "page_view", page: window.location.pathname });
+    fetchResource();
+  }, [])
+  // express.js
 
   return (
     <React.Fragment>
       <MainHeader />
       <SearchFiled />
-
-      
-      {/* <button onClick={getBackendData}>Get Back End Data</button>
-      {data && (
-        data.length === 0
-          ? <p>No results</p>
-          : <div>{JSON.stringify(data)}</div>
-      )} */}
-
     </React.Fragment>
   );
 }
