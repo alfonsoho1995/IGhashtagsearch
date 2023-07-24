@@ -1,5 +1,7 @@
 // Import the axios HTTP library and the SDK methods you'll be calling
 // import axios from 'axios';
+import React from 'react';
+
 import {
   initialize,
   getInAppMessages
