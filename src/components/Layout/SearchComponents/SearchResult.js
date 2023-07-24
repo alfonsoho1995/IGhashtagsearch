@@ -50,7 +50,7 @@ const SearchResult = (props) => {
         resultShow = <SearchResultEmpty />
     }
 
-    // console.log(input);
+    console.log(input);
 
     return (
             <React.Fragment>
