@@ -69,13 +69,13 @@ const InBrowser = () => {
     };
 
     return (
-        <>
-            <Button
+        <React.Fragment>
+            <div
                 onclick={getMessagesAutoDisplay}
             >
-                Click Me
-            </Button>
-        </>
+                <h2>Click Me</h2>
+            </div>
+        </React.Fragment>
     )
 
 }
